@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="diagram01-sales-order" name="Page 1">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="start-event" value="" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="345" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="task-take-order" value="Take the customer order" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="320" width="190" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="task-credit-check" value="Run the credit check" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="320" width="190" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="task-record-sale" value="Record the sale" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="320" width="190" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="end-event" value="" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=4;" vertex="1" parent="1">
+          <mxGeometry x="950" y="345" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="flow-1" style="html=1;endArrow=classic;rounded=0;" edge="1" parent="1" source="start-event" target="task-take-order">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow-2" style="html=1;endArrow=classic;rounded=0;" edge="1" parent="1" source="task-take-order" target="task-credit-check">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow-3" style="html=1;endArrow=classic;rounded=0;" edge="1" parent="1" source="task-credit-check" target="task-record-sale">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow-4" style="html=1;endArrow=classic;rounded=0;" edge="1" parent="1" source="task-record-sale" target="end-event">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
